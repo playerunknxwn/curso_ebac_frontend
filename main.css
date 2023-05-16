@@ -116,3 +116,8 @@ section h2 {
 #tech article a {
     background-color: purple;
 }
+
+footer {
+    background-color: black;
+    color: #f5f6fa;
+}
