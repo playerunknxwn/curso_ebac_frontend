@@ -1,33 +1,39 @@
-//receber os elementos em const/var
-const input1 = document.querySelector('#input1')
-const input2 = document.querySelector('#input2')
-const error = document.querySelector('.error')
-const success = document.querySelector('.success')
+//receber os elementos, para melhor manipular no Js
+let campo1 = document.querySelector('input#input1')
+let campo2 = document.querySelector('input#input2')
+const errorMessage = document.querySelector('.error')
+const successMessage = document.querySelector('.success')
+const form = document.querySelector('.formcomp')
 
-//não atualizar no submit
-const formcalc = document.querySelector('.formcalc')
-//event listener
-formcalc.addEventListener('submit', function(e) { 
+//não atualizar a page e procedimentos a seguir
+form.addEventListener('submit', function(e) {
     e.preventDefault()
 
-    function verMaior (a, b) {
-        const bEMaior = b > a
-        return bEMaior
+    //verificar se ta recebendo os valores corretamente
+    console.log(campo2.value, '>', campo1.value)
+
+    //facilitar as coisas e converter o .value pra Integer, pra ter certeza q number é number
+    let valueCampo1 = parseInt(campo1.value)
+    let valueCampo2 = parseInt(campo2.value)
+
+    function compararAB(input1, input2) {
+        const bMaiorA = input2 > input1
+        return bMaiorA
     }
-    //bEMaior retorna true ou false da função
 
-    functionValue = verMaior(input1.value, input2.value)
-    //functionValue vai carregar o valor boolean pra if
-
-    if (functionValue) {
-        success.style.display = 'block'
+    let resultadoAB = compararAB(valueCampo1, valueCampo2)
+    //dar aquela averiguada no boolean
+    console.log(resultadoAB)
+    
+    if (resultadoAB) {
+        successMessage.style.display = 'block'
     } else {
-        error.style.display = 'block'
+        errorMessage.style.display = 'block'
     }
 })
 
 //reset all
-formcalc.addEventListener('reset', function() {
-    error.style.display = 'none'
-    success.style.display = 'none'
+form.addEventListener('reset', function() {
+    successMessage.style.display = 'none'
+    errorMessage.style.display = 'none'
 })

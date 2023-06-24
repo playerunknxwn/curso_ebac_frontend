@@ -12,13 +12,13 @@
     margin: 100px;
 }
 
-.formcalc {
+.formcomp {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.formcalc input {
+.formcomp input {
     margin: 5px;
     border-color: aqua;
     border-radius: 12px;
@@ -58,7 +58,7 @@ p.success {
     color: purple;
 }
 
-#result, #reset{
+#result, #reset {
     background-color: lightblue;
     color: white;
     width: 60px;

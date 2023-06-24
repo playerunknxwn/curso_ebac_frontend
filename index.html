@@ -8,16 +8,16 @@
 </head>
 <body>
     <div class="container">
-        <form class="formcalc">
-            <input type="number" name="a" id="input1">
-            <input type="number" name="b" id="input2">
+        <form class="formcomp">
+            <input type="number" name="a" id="input1" required placeholder=" A">
+            <input type="number" name="b" id="input2" required placeholder=" B">
             <input type="submit" value="submit" id="result">
             <input type="reset" value="reset" id="reset">
         </form>
     </div>
     <div class="div_p">
-        <p class="error">O primeiro número não pode ser maior do que o segundo!</p>
-        <p class="success">Excelente! O número do segundo campo é maior que o do primeiro</p>
+        <p class="error">O número do campo A não pode ser maior do que o do campo B!</p>
+        <p class="success">Excelente! O número do campo B é maior que o do campo A.</p>
     </div>
     <script src="/main.js"></script>
 </body>
