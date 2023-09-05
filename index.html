@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Exercício jQuery</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Cadastro</h3>
+        <form>
+            <div class="form-input">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div class="form-input">
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf">
+            </div>
+            <div class="form-input">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-input area-telefone">
+                <label for="telefone"></label>
+                <input type="radio" name="opcao" value="telefone" id="radioTelefone" checked>Telefone
+                <input type="radio" name="opcao" value="celular" id="radioCelular">Celular
+                <input type="tel" name="telefone" id="telefone">
+            </div>
+            <div class="form-input">
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" id="cep">
+            </div>
+            <div class="form-input">
+                <label for="address">Endereço:</label>
+                <input type="text" name="address" id="address">
+            </div>
+            <button type="submit" name="submitButton" id="submitButton">Enviar</button>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
