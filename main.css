@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    padding-inline: 10%;
+    max-width: 1280px;
+}
+
+.container h2 {
+    border-bottom: 2px solid black;
+    font-style: italic;
+}
+
+header {
+    background-color: rgb(45, 45, 75);
+    color: aliceblue;
+}
+
+header li {
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(133, 133, 133);
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+}
+
+.sobre {
+    display: flex;
+    margin-block: 20px;
+}
+
+.sobre img {
+    padding-right: 20px;
+    height: 250px;
+}
+
+.sobre div {
+    display: block;
+}
+
+.sobre div h2 {
+    margin-bottom: 12px;
+}
+
+.produtos li {
+    width: 100%;
+    display: block;
+    list-style: none;
+    margin-top: 7px;
+}
+
+.produtos li p {
+    padding: 0 0 5px 2px;
+}
+
+.produtos li p, button {
+    width: 100%;
+}
+
+.produtos button {
+    background-color: rgb(45, 45, 75);
+    color: aliceblue;
+    border-radius: 4px;
+}
+
+.produtos button:hover {
+    cursor: pointer;
+}
+
+.produtos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+}
+
+.produtos h3 {
+    padding-left: 2px;
+}
+
+.container .produtos img {
+    width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+
+    .container {
+        width: 95%;
+    }
+    .sobre {
+        display: block;
+    }
+
+    .sobre img {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .container .produtos {
+        display: block;
+        width: 100%;
+    }
+
+    .produtos li {
+        margin-bottom: 2em;
+    }
+
+    .produtos li p, h3 {
+        padding: 0 0 1px 1px;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width:1024px) {
+    .sobre {
+        display: block;
+        margin-block: 20px;
+    }
+
+    .sobre img {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .sobre p {
+        font-size: 12px;
+    }
+
+    .container .produtos {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+
+    .produtos li {
+        margin-block: 14px;
+    }
+}
