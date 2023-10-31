@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+    padding-block: 10px;
+}
+
+.container, header {
+    max-width: 1280px;
+}
+
+#slide {
+    margin-bottom: 12px;
+}
+
+.card-img-overlay {
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item img {
+    max-height: 100vh;
+    width: 1280px;
+    object-fit: cover;
+}
+.card img {
+    border: 2px solid black;
+    border-radius: 0.25rem;
+}
+
+.card {
+    margin-bottom: 12px;
+}
+
+@media screen and (min-width: 641px) and (max-width:1024px) {
+    .col-4 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .col-4 {
+        width: 100%;
+    }
+}

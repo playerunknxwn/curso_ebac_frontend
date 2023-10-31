@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="carousel slide" id="slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/imgs/pexels-cátia-matos-1072179 (1).jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/imgs/pexels-dexter-fernandes-2646237 (1).jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/imgs/pexels-irina-iriser-1379630 (1).jpg" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#slide" data-bs-slide="prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#slide" data-bs-slide="next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#slide" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#slide" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#slide" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </header>
+            <main>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card text-bg-dark">
+                            <img src="/imgs/pexels-aarnav-maitreya-1209039.jpg" >
+                            <div class="card-img-overlay">
+                                <h4 class="card-title">Card</h4>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis inventore quidem dolorum est! Consequuntur vero odit maxime dicta consectetur quibusdam architecto quo.</p> 
+                                <div class="card-link">
+                                    <a class="btn btn-primary" href="#">Ver mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-bg-dark">
+                            <img src="/imgs/pexels-akshay-kumar-1449241.jpg" >
+                            <div class="card-img-overlay">
+                                <h4 class="card-title">Card</h4>
+                                <p class="card-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa porro enim suscipit facilis ex, sed iste dolorem ratione, tenetur sit at hic.
+                                </p>
+                                <a href="#" class="btn btn-primary">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-bg-dark">
+                            <img src="/imgs/pexels-samuel-crosland-2557232.jpg" >
+                            <div class="card-img-overlay">
+                                <h4 class="card-title">Card</h4>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis inventore quidem dolorum est! Consequuntur vero odit maxime dicta consectetur quibusdam architecto quo.</p> 
+                                <div class="card-link">
+                                    <a class="btn btn-primary" href="#">Ver mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
